@@ -1,6 +1,6 @@
-CREATE DATABASE prmoneyz;
+CREATE DATABASE moneyz;
 USE moneyz;
-CREATE TABLE user(
+CREATE TABLE users(
     id INT NOT NULL AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
@@ -12,5 +12,6 @@ CREATE TABLE moneyz(
     id INT NOT NULL AUTO_INCREMENT,
     user_id INT NOT NULL,
     moneyz INT NOT NULL,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
