@@ -8,10 +8,9 @@
 <div>
 	<form action="registration.php" method="post">
 		<div class="container">
-			<h1>Registration</h1>
-			<p>Fill up the form with correct values.</p>
-			<label for="firstname"><b>First Name</b></label>
-			<input type="text" name="firstname" required>
+			<h1>Registratie</h1>
+			<label for="firstname"><b>Gebruikersnaam</b></label>
+			<input type="text" name="username" required>
 		</div>
 	</form>
 </div>
